@@ -15,13 +15,13 @@ class PostContainer extends StatelessWidget {
 
     return Card(
       margin:EdgeInsets.symmetric(
-        horizontal:isDesktop == true ? 5 : 0,
+        horizontal:isDesktop ? 5 : 0,
         vertical:5,
       ),
-      elevation: isDesktop == true ? 1 : 0,
-      shape: isDesktop == true ? 
+      elevation: isDesktop ? 1 : 0,
+      shape: isDesktop ? 
         RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10)
+          borderRadius: BorderRadius.circular(10.0)
         ) : null,
       child: Container(
         padding:const EdgeInsets.symmetric(vertical: 8),
